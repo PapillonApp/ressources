@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Papillon CDN">
+    <meta property="og:description" content="Votre toute nouvelle vie scolaire">
+    <meta property="og:image" content="https://cdn.getpapillon.xyz/icon.png" />
+    <meta property="og:image:secure_url" content="https://cdn.getpapillon.xyz/icon.png" />
+    <meta property="og:image:width" content="128" />
+    <meta property="og:image:height" content="128" />
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Papillon CDN</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+        }
+
+        .banner-phone {
+            background-image: url("banner-phone.png");
+        }
+
+        .banner-default {
+            background-image: url("banner.png");
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.body.classList.add('banner-phone');
+    } else {
+        document.body.classList.add('banner-default');
+    }
+</script>
+
+</body>
+</html>
